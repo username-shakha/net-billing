@@ -1,0 +1,37 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Onest', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  color: $soft-light;
+}
+
+.breadcrumbs a:hover {
+  color: #0056b3;
+}
+
+.breadcrumbs a.isactive {
+  font-weight: 400;
+  color: $gray;
+  cursor: default;
+}
+
+// .breadcrumbs span {
+//   font-weight: 400;
+//   color: $gray;
+// }
+
+.breadcrumbs > *:not(:last-child)::after {
+  content: '/';
+  font-size: 12px;
+  margin: 0 8px;
+  color: $gray;
+}
