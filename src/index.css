@@ -1,0 +1,108 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+
+    a:hover {
+      color: #747bff;
+    }
+  }
+}
+
+form {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+  font-weight: 500;
+  color: #213547;
+  transition: color 0.3s;
+}
+
+input {
+  width: 100%;
+  padding: 0.8em;
+  margin: 0.5em 0;
+  font-size: 1em;
+  font-family: inherit;
+  color: #213547;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s,
+    background-color 0.3s,
+    color 0.3s;
+}
+
+input:focus {
+  border-color: #646cff;
+  box-shadow: 0 0 8px rgba(100, 108, 255, 0.5);
+  outline: none;
+}
+
+input:focus + label {
+  color: #646cff;
+}
+
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Тёмная тема */
+@media (prefers-color-scheme: dark) {
+  label {
+    color: #f9f9f9;
+  }
+
+  input {
+    color: #f9f9f9;
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  input:focus {
+    border-color: #646cff;
+    box-shadow: 0 0 8px rgba(100, 108, 255, 0.8);
+  }
+
+  input::placeholder {
+    color: #666;
+  }
+}
