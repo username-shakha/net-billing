@@ -1,0 +1,24 @@
+.navbar {
+  height: 72px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary;
+
+  &__icon-buttons {
+    .icon-button {
+      margin-left: 16px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  // &__icon-buttons {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 16px;
+  // }
+}
