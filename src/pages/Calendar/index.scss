@@ -1,0 +1,8 @@
+.calendar-wrap {
+  display: flex;
+  align-items: stretch;
+
+  .calendar {
+    flex-grow: 1;
+  }
+}

@@ -1,3 +1,17 @@
 export { HelpCircleIcon } from './HelpCircleIcon';
 export { NotificationIcon } from '././NotifiactionIcon';
 export { InternetCircleIcon } from './InternetCircleIcon';
+export { FileAddIcon } from './FileAddIcon';
+export { CalendarIcon } from './CalendarIcon';
+export { FolderIcon } from './FolderIcon';
+export { FolderMoveToIcon } from '././FolderMoveToIcon';
+export { FileIcon } from './FileIcon';
+export { DocumentValidationIcon } from './DocumentValidationIcon';
+export { MessageMultipleIcon } from './MessageMultipleIcon';
+export { CloseSidebarIcon } from './CloseSidebarIcon';
+export { ComputerIcon } from './ComputerIcon';
+export { AddCircleIcon } from './AddCircleIcon';
+export { ChevronDownIcon } from './ChevronDownIcon';
+export { ChevronUpIcon } from './ChevronUpIcon';
+export { IndicatorIcon } from './IndicatorIcon';
+export { CloseIcon } from './CloseIcon';

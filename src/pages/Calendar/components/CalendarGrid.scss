@@ -1,0 +1,35 @@
+.calendar-grid {
+  border-top: 1px solid #e0e0e0;
+
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: 1px solid #e0e0e0;
+
+    .day-name {
+      padding: 16px;
+      text-align: center;
+      border-right: 1px solid #e0e0e0;
+
+      font-weight: 500;
+
+      font-size: 14px;
+      color: var(--dark-grey);
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  .calendar-dates {
+    .week {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #e0e0e0;
+      }
+    }
+  }
+}

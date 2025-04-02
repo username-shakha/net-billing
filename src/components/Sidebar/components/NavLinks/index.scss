@@ -1,0 +1,39 @@
+.nav-link {
+  list-style: none;
+
+  &__item {
+    color: var(--soft-light);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: var(--dark-gray);
+    }
+  }
+
+  &__label {
+    margin-left: 8px;
+  }
+
+  &__arrow {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    transition: transform 0.3s;
+
+    &.rotate {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__children {
+    margin-left: 16px;
+    margin-top: 8px;
+  }
+}
