@@ -1,24 +1,18 @@
-'use client';
-
-import type React from 'react';
 import { useState } from 'react';
-import CalendarHeader from './CalendarHeader';
-import CalendarGrid from './CalendarGrid';
-import './Calendar.scss';
-
-export type EventType = 'responsible' | 'incoming' | 'internal';
-
+import CalendarHeader from './components/CalendarHeader';
+import CalendarGrid from './components/CalendarGrid';
+import './index.scss';
 export interface Event {
   date: Date;
-  type: EventType;
+  type: 'responsible' | 'incoming' | 'internal';
 }
 
 interface CalendarProps {
   initialDate?: Date;
-  events?: Event[];
+  events: Event[];
 }
 
-export const CalendarComponent: React.FC<CalendarProps> = ({
+export const CalendarContainer: React.FC<CalendarProps> = ({
   initialDate = new Date(),
   events = [],
 }) => {
@@ -43,7 +37,7 @@ export const CalendarComponent: React.FC<CalendarProps> = ({
   };
 
   // Переключение фильтров
-  const toggleFilter = (type: EventType) => {
+  const toggleFilter = (type: 'responsible' | 'incoming' | 'internal') => {
     setFilters((prev) => ({
       ...prev,
       [type]: !prev[type],
@@ -52,9 +46,8 @@ export const CalendarComponent: React.FC<CalendarProps> = ({
 
   // Фильтрация событий
   const filteredEvents = events.filter((event) => filters[event.type]);
-
   return (
-    <div className="calendar">
+    <div className="calendar-container">
       <CalendarHeader
         currentDate={currentDate}
         filters={filters}

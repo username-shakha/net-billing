@@ -1,7 +1,7 @@
 import type React from 'react';
-import type { Event } from './CalendarComponent';
-import CalendarDay from './CalendarDay';
-import './CalendarGrid.scss';
+import type { Event } from '../../../CalendarContainer';
+import CalendarDay from '../CalendarDay';
+import './index.scss';
 
 interface CalendarGridProps {
   currentDate: Date;

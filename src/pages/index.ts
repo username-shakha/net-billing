@@ -1,5 +1,5 @@
 export { Home } from './Home';
-export { Calendar } from './Calendar';
+export { CalendarPage } from './Calendar';
 export { NotFound } from './404';
 export { Sent } from './Sent';
 export { OnExecution } from './OnExecution';

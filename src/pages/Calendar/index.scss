@@ -1,8 +1,8 @@
-.calendar-wrap {
+.calendar-page {
   display: flex;
   align-items: stretch;
 
-  .calendar {
+  .calendar-container {
     flex-grow: 1;
   }
 }

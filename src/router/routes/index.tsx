@@ -1,7 +1,7 @@
 import { RouteObject } from 'react-router-dom';
 import {
   Home,
-  Calendar,
+  CalendarPage,
   NotFound,
   Sent,
   OnExecution,
@@ -17,7 +17,7 @@ const routes: RouteObject[] = [
     element: <Layout />,
     children: [
       { index: true, element: <Home /> },
-      { path: 'calendar', element: <Calendar /> },
+      { path: 'calendar', element: <CalendarPage /> },
       { path: 'my-documents', element: <MyDocuments /> },
       { path: 'messages', element: <Messages /> },
       {

@@ -1,9 +1,9 @@
 import { useAsideStore } from '@/store/useAsideStore';
 import { IconButton, Card, Aside } from '@/components';
 import { CloseIcon } from '@/components/Icons';
-import './CardList.scss';
+import './index.scss';
 
-const CardList = () => {
+const CalendarAside = () => {
   const { close, isOpen } = useAsideStore();
   return (
     <Aside className={`aside-right ${isOpen[2] ? 'open' : ''}`}>
@@ -21,4 +21,4 @@ const CardList = () => {
   );
 };
 
-export default CardList;
+export default CalendarAside;

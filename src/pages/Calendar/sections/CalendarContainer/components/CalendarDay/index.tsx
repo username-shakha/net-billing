@@ -1,7 +1,7 @@
 import type React from 'react';
-import type { Event } from './CalendarComponent';
-import './CalendarDay.scss';
+import type { Event } from '../../../CalendarContainer';
 import { useAsideStore } from '@/store/useAsideStore';
+import './index.scss';
 
 export interface CalendarDayProps {
   day: number;
