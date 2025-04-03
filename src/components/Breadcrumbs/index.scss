@@ -1,0 +1,26 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.breadcrumbs a {
+  transition: color 0.3s ease;
+  color: var(--soft-light);
+}
+
+.breadcrumbs a:hover {
+  color: #0056b3;
+}
+
+.breadcrumbs span.breadcrumb-last {
+  color: var(--gray);
+  cursor: default;
+}
+
+.breadcrumbs > *:not(:last-child)::after {
+  content: '/';
+  font-size: 12px;
+  margin: 0 8px;
+  color: var(--gray);
+}

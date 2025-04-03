@@ -1,19 +1,21 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { RouterProvider } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import router from './router';
 
-import App from './App';
-import './index.css';
+import './styles/global.scss';
 
 const queryClient = new QueryClient();
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement,
+);
+
+root.render(
+  <StrictMode>
     <QueryClientProvider client={queryClient}>
-      <Router>
-        <App />
-      </Router>
+      <RouterProvider router={router} />
     </QueryClientProvider>
-  </React.StrictMode>,
+  </StrictMode>,
 );

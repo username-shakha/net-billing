@@ -6,13 +6,13 @@ export const InternetCircleIcon = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_381_1050)">
+    <g clipPath="url(#clip0_381_1050)">
       <circle
         cx="9.99935"
         cy="10.0003"
         r="8.33333"
         stroke="#AEB3CB"
-        stroke-width="1.5"
+        strokeWidth="1.5"
       />
       <ellipse
         cx="9.99935"
@@ -20,14 +20,14 @@ export const InternetCircleIcon = () => (
         rx="3.33333"
         ry="8.33333"
         stroke="#AEB3CB"
-        stroke-width="1.5"
+        strokeWidth="1.5"
       />
       <path
         d="M1.66602 10H18.3327"
         stroke="#AEB3CB"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
     <defs>

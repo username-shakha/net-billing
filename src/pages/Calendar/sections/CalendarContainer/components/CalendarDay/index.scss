@@ -1,0 +1,59 @@
+.date-cell {
+  min-height: 215px;
+  padding: 24px;
+  position: relative;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  &.other-month {
+    color: #aaa;
+  }
+
+  &.today {
+    background-color: var(--soft-light);
+  }
+
+  .date-number {
+    font-weight: 500;
+
+    color: var(--primary);
+    margin-bottom: 4px;
+  }
+
+  .today-label {
+    font-size: 16px;
+    color: #9747ff;
+    margin-top: 14px;
+  }
+
+  .events {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 8px;
+
+    .event-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+
+      &.responsible {
+        background-color: #673ab7;
+      }
+
+      &.incoming {
+        background-color: #f44336;
+      }
+
+      &.internal {
+        background-color: #4caf50;
+      }
+    }
+  }
+}

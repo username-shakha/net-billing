@@ -1,0 +1,45 @@
+.aside-left {
+  width: 333px;
+  background-color: var(--primary);
+
+  &.close {
+    width: 0;
+    overflow: hidden;
+  }
+}
+
+.aside-right {
+  width: 0px;
+  display: none;
+  transform: translateX(100%);
+  border-left: 1px solid var(--divider);
+  &.open {
+    transform: translateX(0);
+    width: 606px;
+    display: block;
+  }
+}
+
+// .aside {
+//   width: 0px;
+//   display: none;
+//   // transition: transform 0.3s ease-in-out;
+//   transform: translateX(100%);
+
+//   &.open {
+//     transform: translateX(0);
+//     width: 606px;
+
+//     display: block;
+//   }
+// transition: margin-right 0.3s ease-in-out;
+//   transition: all 0.3s ease-in-out;
+//}
+
+// width: 333px;
+// background-color: var(--primary);
+
+// &.close {
+//   width: 0;
+//   overflow: hidden;
+// }
