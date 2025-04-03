@@ -2,9 +2,9 @@ import { IndicatorIcon } from '../Icons';
 import { cardsData } from './data';
 import './index.scss';
 
-export const Card = () => (
+export const DocumentCard = () => (
   <>
-    {cardsData.map((card) => (
+    {cardsData.map(card => (
       <div className="card" key={card.id}>
         <div className="card__header">
           <div className="card__header-left">

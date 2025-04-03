@@ -1,5 +1,5 @@
 import { useAsideStore } from '@/store/useAsideStore';
-import { IconButton, Card, Aside } from '@/components';
+import { IconButton, DocumentCard, Aside } from '@/components';
 import { CloseIcon } from '@/components/Icons';
 import './index.scss';
 
@@ -15,7 +15,7 @@ const CalendarAside = () => {
         <div className="card-list__subtitle">
           <p> Все документы за этот день</p>
         </div>
-        <Card />
+        <DocumentCard />
       </div>
     </Aside>
   );

@@ -1,4 +1,4 @@
-export const generateSampleEvents = () => {
+export const generateEvents = () => {
   const events = [];
   const today = new Date();
   const currentMonth = today.getMonth();
